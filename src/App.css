@@ -1,38 +1,68 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body{
+ background: #eee;
+ font-family: sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width:80%;
+  margin: 0 auto;
+  background: #fff;
+  border-bottom: 4px solid rgb(129,129,129);
 }
-
-.App-link {
-  color: #61dafb;
+.NewConfirmed,
+.NewRecovered,
+.NewDeaths,
+.TotalConfirmed,
+.TotalRecovered,
+.TotalDeaths{
+padding: 20px;
+text-align:center;
+margin: 0 auto;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.NewConfirmed{
+  color: orangered;
+ 
+}
+.TotalConfirmed{
+  color:orchid ;
+ 
+}
+.NewDeaths{
+  color:maroon ;
+ 
+}
+.TotalDeaths{
+  color: red;
+ 
+}
+.NewRecovered{
+  color: green;
+ 
+}
+.TotalRecovered{
+  color:greenyellow ;
+ 
+}
+table{
+  border-collapse: separate;
+  width:80%;
+  margin: 0 auto;
+  border-spacing: 0 12px;
+}
+table thead tr{
+  background: #fff;
+}
+table thead tr th{
+  padding: 20px;
+  text-align: left;
+}
+table tbody td{
+background: #fff;
+}
+table thead tr td{
+  padding: 12px;
+  text-align:left;
 }
